@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Vehicle Service</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo-no-background.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+  <!-- =======================================================
+  * Template Name: Eterna
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <section class="section" id="section1">
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex justify-content-between align-items-center">
+  
+        <div class="logo">
+          <!-- <a href="index.html"><img src="https://tse1.mm.bing.net/th/id/OIG3.Z1m6Yn6yoqZc1ZXi3A.Q?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" width="180px" height="300px" alt="hello"></img></a> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+          <img src="./assets/img/logo-no-background.png" width="300px" height="300px"/>
+        </div>
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li class="list-item1">
+              <a href="index.html ">Home</a>
+              <div class="nav-items1"></div>
+            </li>
+            <li class="list-item2">
+              <a href="#section6">About us</a>
+              <div class="nav-items2"></div>
+            </li>
+            <li class="list-item3">
+              <a href="#section3">Services</a>
+              <div class="nav-items3"></div>
+            </li>
+            <li class="list-item5">
+            <a href="#section6">Contact</a>
+              <div class="nav-items5"></div>
+            </li>
+            <li class="list-item5">
+              <a href="/DE/admin/index.php">Admin</a>
+                <div class="nav-items5"></div>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+        <div class="nav-button-container">
+          <a href="../loginpage/login-form-14/login.php" class="nav-login">Login</a>
+          <a href="../registerpage/colorlib-regform-8/index.php"><button class="nav-signup">Sign Up</button></a>
+        </div>
+      </div>
+    </header><!-- End Header -->
+  </section>
+  <!-- ======= Hero Section ======= -->
+  <section class="section" id="section2">
+    <div class="content">
+    <section class="main-section">
+
+        <div class="content-left">
+            <p class="hero-content">Revolutionize your fleet management effortlessly with our comprehensive vehicle service management system. Stay ahead with automated maintenance scheduling, efficient repair tracking, streamlined inventory management, and insightful reporting and analytics. Seamlessly optimize your operations while minimizing downtime and maximizing productivity. Join thousands of satisfied customers worldwide who trust our solution to streamline their vehicle service operations. Request a demo today and experience the difference firsthand</p>
+        </div>
+        
+        <div class="content-right">
+
+            <div class="image-container">
+                <img src="assets/img/hero3.jpg" alt="sectionImage" class="section-image" width="400rem" height="400rem"/>
+            </div>
+
+        </div>
+    </section>
+  <!-- End Hero -->
+  </section>
+  <!-- ======= Search Vehicle Service Center-->
+  <section style = "margin-top: 5rem; margin-bottom: 5rem;">
+    <h1 class="dropdown-title">Search Your Nearest Vehicle Service Center</h1>
+    <p class="dropdown-content">Get a preview list of the nearest centers and get details about centers</p>
+    <p class="dropdown-link"><a>Login To Request for Service</a></p>
+  
+    <div class="search-section">
+      <select id="state-select" name="state" class="custom-dropdown">
+        <option value="" disabled selected>Select State</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Maharashtra">Maharashtra</option>
+      </select>
+  
+      <select id="city-select" name="city" class="custom-dropdown" disabled>
+        <option value="" selected>Select City</option>
+        <!-- Options for Gujarat -->
+        <option value="Surat" data-state="Gujarat" disabled>Surat</option>
+        <option value="Navsari" data-state="Gujarat" disabled>Navsari</option>
+        <option value="Ahmedabad" data-state="Gujarat" disabled>Ahmedabad</option>
+        <!-- Options for Rajasthan -->
+        <option value="Jaipur" data-state="Rajasthan" disabled>Jaipur</option>
+        <option value="Udaipur" data-state="Rajasthan" disabled>Udaipur</option>
+        <option value="Jodhpur" data-state="Rajasthan" disabled>Jodhpur</option>
+        <!-- Options for Maharashtra -->
+        <option value="Dhule" data-state="Maharashtra" disabled>Dhule</option>
+        <option value="Nagpur" data-state="Maharashtra" disabled>Nagpur</option>
+        <option value="Pune" data-state="Maharashtra" disabled>Pune</option>
+      </select>
+  
+      <button id="search-btn">Search</button>
+    </div>
+    <div class="search-container">
+    <div class="service-centers">
+      <!-- Service center cards will be dynamically added here -->
+    </div>
+    </div>
+  </section>
+  
+<section class="section" id="section3">
+  <main id="main">
+
+      <!-- ======= Services Section ======= -->
+      <div class="service-container">
+        <h1 class="cards-title">Our Services</h1>
+        <div class="services-cards1">
+          <div class="card">
+            <p class="card-title">Maintenance Scheduling</p>
+            <img src="./assets/img/maintenance.png" class="card-img"/>
+            <p class="card-info"> Efficiently manage routine maintenance tasks for your fleet with automated scheduling, ensuring vehicles stay in optimal condition and minimizing downtime.</p>
+          </div>
+          <div class="card">
+            <p class="card-title">Repair Tracking</p>
+            <img src="./assets/img/wrench.png" class="card-img"/>
+            <p class="card-info"> Track repairs from initiation to completion, providing real-time updates on repair status, costs, and timelines, ensuring swift resolution and minimal disruption to operations.</p>
+          </div>
+          <div class="card">
+            <p class="card-title">Inventory Management</p>
+            <img src="./assets/img/delivery.png" class="card-img"/>
+            <p class="card-info"> Streamline your parts and supplies inventory, optimizing stock levels, tracking usage, and facilitating seamless replenishment, ensuring you have the right parts available when needed.</p>
+          </div>
+        </div>
+        <div class="services-cards2">
+          <div class="card">
+            <p class="card-title">Vehicle Diagnostics</p>
+            <img src="./assets/img/diagnostic.png" class="card-img"/>
+            <p class="card-info"> Monitor the health of your vehicles in real-time, with advanced diagnostic capabilities that identify potential issues early, enabling proactive maintenance and minimizing unexpected breakdowns.</p>
+          </div>
+
+          <div class="card">
+            <p class="card-title">Pick Up & Drop Services</p>
+            <img src="./assets/img/shipped.png" class="card-img"/>
+            <p class="card-info"> Enjoy hassle-free pick up and drop services for your vehicles. Whether it's for maintenance appointments or repairs, our reliable transportation ensures your vehicles are where they need to be, saving you time and effort.</p>
+          </div>
+
+          <div class="card">
+            <p class="card-title">Technician Management</p>
+            <img src="./assets/img/mechanic.png" class="card-img"/>
+            <p>  Efficiently manage your team of technicians with our technician management feature. Assign tasks, track progress, and ensure timely completion of maintenance and repair jobs with our intuitive and user-friendly platform.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    <!-- End Services Section -->
+</section>
+
+  <section class="section" id="section4">
+    <div>
+    <h1 class="faq-title">FREQUENTLY ASKED QUESTIONS</h1>
+    
+    <div class="accordion-wrapper">
+      <div class="accordion-wrap">
+        <div class="accordion-item">
+          <div class="accordion-toggle">
+            <h5 class="accordion-title">How does your system handle vehicle maintenance scheduling?</h5>
+            <img src="./assets/img/down-arrow.png" class="accordion-icon" width="25px" height="25px"/>
+          </div>
+          <nav class="accordion-list">
+            <p class="accordion-list-content">Yes, our system provides comprehensive repair tracking capabilities, allowing users to create repair tickets, assign them to technicians, track progress in real-time, and monitor costs and timelines. This ensures efficient resolution of repairs and reduces the risk of unresolved issues..</p>
+          </nav>
+        </div>
+      </div>
+
+      <div class="accordion-wrap">
+        <div class="accordion-item">
+          <div class="accordion-toggle">
+            <h5 class="accordion-title">Can your system track and manage vehicle repairs effectively?</h5>
+            <img src="./assets/img/down-arrow.png" class="accordion-icon" width="25px" height="25px"/>
+          </div>
+          <nav class="accordion-list">
+            <p class="accordion-list-content">Yes, our system provides comprehensive repair tracking capabilities, allowing users to create repair tickets, assign them to technicians, track progress in real-time, and monitor costs and timelines. This ensures efficient resolution of repairs and reduces the risk of unresolved issues.</p>
+          </nav>
+        </div>
+      </div>
+
+      <div class="accordion-wrap">
+        <div class="accordion-item">
+          <div class="accordion-toggle" onclick="toggleAccordion(this)">
+            <h5 class="accordion-title">How do I sign up for your vehicle service management system?</h5>
+            <img src="./assets/img/down-arrow.png" class="accordion-icon" width="25px" height="25px"/>
+          </div>
+          <nav class="accordion-list">
+            <p class="accordion-list-content">Signing up is easy! Simply click on the "Sign Up" button located in the top right corner of the homepage, fill out the required information, and you'll be ready to start managing your fleet with our system.</p>
+          </nav>
+        </div>
+      </div>
+
+      <div class="accordion-wrap">
+        <div class="accordion-item">
+          <div class="accordion-toggle">
+            <h5 class="accordion-title">Is your system equipped with diagnostic tools for vehicle health monitoring?</h5>
+            <img src="./assets/img/down-arrow.png" class="accordion-icon" width="25px" height="25px"/>
+          </div>
+          <nav class="accordion-list">
+            <p class="accordion-list-content">Yes, our system includes advanced diagnostic tools that monitor the health of vehicles in real-time, detecting potential issues such as engine faults, sensor anomalies, and performance degradation. This proactive approach to vehicle health management helps prevent breakdowns and ensures fleet reliability.</p>
+          </nav>
+        </div>
+      </div>
+      <div class="accordion-wrap">
+        <div class="accordion-item">
+          <div class="accordion-toggle">
+            <h5 class="accordion-title">What types of vehicles does your system support?</h5>
+            <img src="./assets/img/down-arrow.png" class="accordion-icon" width="25px" height="25px"/>
+          </div>
+          <nav class="accordion-list">
+            <p class="accordion-list-content">Our system is designed to support a wide range of vehicles, including cars, trucks, vans, buses, and more. Whether you have a small fleet or a large enterprise-level operation, our system can accommodate your needs.</p>
+          </nav>
+        </div>
+      </div>
+
+      <div class="accordion-wrap">
+        <div class="accordion-item">
+          <div class="accordion-toggle">
+            <h5 class="accordion-title">Do you offer pick up and drop service for vehicle maintenance?</h5>
+            <img src="./assets/img/down-arrow.png" class="accordion-icon" width="25px" height="25px"/>
+          </div>
+          <nav class="accordion-list">
+            <p class="accordion-list-content">Yes, we provide pick up and drop service for vehicle maintenance. Our team will pick up your vehicle from your location, bring it to our service center for maintenance, and then drop it back off to you once the service is complete, ensuring convenience and peace of mind for our customers.</p>
+          </nav>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- ======== Rating & Review =====-->
+  <section class="section" id="section5">
+    
+      <h2 class="review-title">Customer Reviews</h2>
+      <div class="review-container" style="margin-bottom: 5rem;">
+      </div>
+    </div>
+  </section>
+  <a href="../vehicle_service_monitoring_system/service.php"><button class="cta-button">Book a Service now </button></a>
+  <!-- ======= Footer ======= -->
+  <section class="section" id="section6">
+    <footer id="footer">
+
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h4 class="news-title">Get the latest updates</h4>
+              <p class="news-info">Sign up for our newsletter</p>
+            </div>
+            <div class="col-lg-6">
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Subscribe">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Fleet Maintenance:</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Scheduled Servicing</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Vehicle Diagnostics</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Reporting and Analytics</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Pickup & Drop</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <p>
+                Bardoli – Navsari Road, Isroli, Afwa, Bardoli, Gujarat 394620 <br><br>
+                <strong>Phone:</strong> +1 123456789<br>
+                <strong>Email:</strong> vehicleservice@gmail.com<br>
+              </p>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-info">
+              <h3>About Vehicle Service</h3>
+              <p class="footer-about-info">At Vehicle Service, we're dedicated to revolutionizing vehicle service management. With innovative solutions and cutting-edge technology, we streamline maintenance processes for businesses of all sizes. Our expert team ensures reliability, efficiency, and customer satisfaction at every step. Join us in shaping the future of vehicle maintenance with Vehicle Service</p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>VehicleService</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/ -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+
+  Vendor JS Files
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+</body>
+
+</html>

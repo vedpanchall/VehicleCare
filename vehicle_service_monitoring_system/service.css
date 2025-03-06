@@ -1,0 +1,93 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url('background.avif') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+}
+
+.glass-background {
+    background: none; /* Remove background from the glass container */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 900px; /* Adjusted max-width for the container */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for dark theme */
+    color: #fff; /* Text color in dark theme */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* White box shadow for glass effect in dark theme */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    margin: auto; /* Center the container horizontally */
+}
+
+h2 {
+    color: #fff; /* Heading color in dark theme */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #fff; /* Label color in dark theme */
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+select,
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff; /* Border color in dark theme */
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for inputs in dark theme */
+    color: #fff; /* Text color in dark theme */
+}
+
+select {
+    height: 40px;
+    appearance: none; /* Removes default arrow for custom styling */
+    background-color: rgba(255, 255, 255, 0.1); /* Ensure dropdown itself has a semi-transparent background */
+    color: #fff; /* Text color in dark theme */
+}
+
+select option {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for dropdown options */
+    color: #fff; /* Text color for options */
+}
+
+textarea {
+    resize: vertical;
+}
+
+.pickup-drop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.pickup-drop label {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}

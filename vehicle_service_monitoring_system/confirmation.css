@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.avif') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Text color */
+}
+
+.logout-container {
+    text-align: right;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.logout-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    background-color: #45a049;
+}
+
+.confirmation-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* White box shadow for glass effect */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+h2 {
+    color: #4CAF50; /* Green color for heading */
+    text-align: center;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
